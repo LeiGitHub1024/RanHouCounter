@@ -24,13 +24,14 @@
       }
   
       button:hover {
-          background-color: #0056b3; /* 悬停时的深蓝色 */
+          
+        /* 透明度 */
+          opacity: 0.8;
       }
-
-      #stop-btn {
+    
+      .recording {
           background-color: #dc3545; /* 深红色背景 */
       }
-  
       #counter {
           margin: 20px;
           font-size: 20px;
@@ -55,8 +56,10 @@
 </head>
 <body>
     <h1>然后统计器</h1>
-    <button id="start-btn">开始录音</button>
-    <button id="stop-btn">停止录音</button>
+    <!-- <button id="start-btn">开始录音</button>
+    <button id="stop-btn">停止录音</button> -->
+    <button id="record-btn">开始统计</button>
+
     <div id="counter">“然后”出现的总次数：0</div>
 
     <div id="text-output"></div>
